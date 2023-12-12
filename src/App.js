@@ -7,7 +7,7 @@ export default class App extends Component {
   template() {
     return `
       <div class="global-container">
-        <div>
+        <div class="global-list">
           <div data-component="profile-appender"></div>
           <div class="global-line"></div>
           <div data-component="experience-appender"></div>

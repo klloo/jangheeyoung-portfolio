@@ -82,8 +82,8 @@ export default class Projects extends Component {
       <div class="projects-content">
       ${projectList
         .map(
-          (project) => `
-        <div>
+          (project, i) => `
+          <div class="${i < projectList.length - 1 ? 'projects-item' : ''}">
           <div class="projects-item-title">
             ${project.name}
             ${
@@ -123,7 +123,11 @@ export default class Projects extends Component {
           </div> 
           <div class="proejcts-item-label">사용 기술</div>
           <div class="proejcts-item-techstack-wrapper">
-            ${project.techStack.map((tech) => `<div>${tech}</div>`).join('')}
+            ${project.techStack
+              .map(
+                (tech) => `<div class="projects-item-tech-tag">${tech}</div>`
+              )
+              .join('')}
           </div>
         </div>
       `

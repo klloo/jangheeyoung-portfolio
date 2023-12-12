@@ -37,8 +37,10 @@ export default class Experience extends Component {
         <div class="experience-content">
           ${experienceList
             .map(
-              (experience) => `
-              <div>
+              (experience, i) => `
+              <div class="${
+                i < experienceList.length - 1 ? 'experience-item' : ''
+              }">
                 <div class="experience-item-title">
                   <div>${experience.name}</div> 
                 </div>

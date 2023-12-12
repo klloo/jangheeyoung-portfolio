@@ -17,7 +17,9 @@ export default class Techstack extends Component {
             .map(
               (techList) => `
               <div class="tech-list-wrapper">
-                ${techList.map((tech) => `<div>${tech}</div>`).join('')}
+                ${techList
+                  .map((tech) => `<div class="tech-tag">${tech}</div>`)
+                  .join('')}
               </div>
             `
             )
