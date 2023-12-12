@@ -142,6 +142,7 @@ html {
 body {
   line-height: 1.5;
   word-break: keep-all;
+  width: 100%;
 }
 a:link,
 a:visited,
@@ -153,12 +154,14 @@ b {
 }
 
 .global-container {
-  display: flex;
-  flex-direction: column;
-  gap: 3rem;
-  padding: 5rem 13rem;
-  @media (max-width: 768px) {
-    padding: 5rem 1rem;
+  margin: 0 auto;
+  padding: 5rem 0.5rem;
+  width: 100%;
+  max-width: 70%;
+  > div {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
   }
 }
 

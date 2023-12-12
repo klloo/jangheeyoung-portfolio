@@ -75,6 +75,7 @@ export default class Projects extends Component {
       },
     ];
     return `
+    <div>
       <div class="projects-title">
         <div>진행 프로젝트</div>
       </div>
@@ -128,6 +129,7 @@ export default class Projects extends Component {
       `
         )
         .join('')}
+    </div>
     </div>
     `;
   }

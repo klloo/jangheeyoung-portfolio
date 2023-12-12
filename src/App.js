@@ -7,11 +7,13 @@ export default class App extends Component {
   template() {
     return `
       <div class="global-container">
-        <div data-component="profile-appender"></div>
-        <div class="global-line"></div>
-        <div data-component="experience-appender"></div>
-        <div class="global-line"></div>
-        <div data-component="projects-appender"></div>
+        <div>
+          <div data-component="profile-appender"></div>
+          <div class="global-line"></div>
+          <div data-component="experience-appender"></div>
+          <div class="global-line"></div>
+          <div data-component="projects-appender"></div>
+        </div>
       </div>
     `;
   }
