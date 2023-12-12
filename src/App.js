@@ -1,6 +1,6 @@
 import Component from './core/Component.js';
-import Profile from './components/profile.js';
-import Experience from './components/experience.js';
+import Profile from './components/Profile.js';
+import Experience from './components/Experience.js';
 import Projects from './components/Projects.js';
 
 export default class App extends Component {
