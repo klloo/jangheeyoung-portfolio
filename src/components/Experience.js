@@ -1,4 +1,5 @@
 import Component from '../core/Component.js';
+import Style from '../style/experience.css';
 
 export default class Experience extends Component {
   template() {

@@ -1,4 +1,5 @@
 import Component from '../core/Component.js';
+import Style from '../style/projects.css';
 
 export default class Projects extends Component {
   template() {

@@ -1,4 +1,5 @@
 import Component from '../core/Component.js';
+import Style from '../style/tech-stack.css';
 
 export default class Techstack extends Component {
   template() {
