@@ -1,11 +1,12 @@
 const path = require('path');
 
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const CopyPlugin = require('copy-webpack-plugin');
 
 module.exports = {
   entry: './src/main.js',
   output: {
-    path: path.resolve(__dirname, 'public'), //배포 경로 docs로 설정한 것
+    path: path.resolve(__dirname, 'public'),
     filename: '[fullhash].bundle.js',
     clean: true,
   },
@@ -21,6 +22,9 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       template: path.resolve(__dirname, 'src', 'index.html'),
+    }),
+    new CopyPlugin({
+      patterns: [{ from: 'src/assets', to: 'assets' }],
     }),
   ],
   target: ['web', 'es5'],

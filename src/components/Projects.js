@@ -87,7 +87,7 @@ export default class Projects extends Component {
               project.siteLink !== null
                 ? `
                   <a target="_blank" href="${project.siteLink}">
-                    <img class="projects-item-icon" src="/src/images/link-icon.svg" alt="${project.name}-link">
+                    <img class="projects-item-icon" src="${process.env.PUBLIC_URL}/assets/images/link-icon.svg" alt="${project.name}-link">
                   </a>
                 `
                 : ''
@@ -96,7 +96,7 @@ export default class Projects extends Component {
               project.github !== null
                 ? `
                   <a target="_blank" href="${project.github}">
-                    <img class="projects-item-icon" src="/src/images/github-icon.svg" alt="${project.name}-github">
+                    <img class="projects-item-icon" src="${process.env.PUBLIC_URL}/assets/images/github-icon.svg" alt="${project.name}-github">
                   </a>
                 `
                 : ''
