@@ -1,5 +1,5 @@
 import Component from '../core/Component.js';
-import Techstack from './Techstack.js';
+import Techstack from './TechStack.js';
 import Style from '../style/profile.css';
 
 export default class Profile extends Component {
