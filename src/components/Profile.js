@@ -1,5 +1,9 @@
 import Component from '../core/Component.js';
 import Techstack from './TechStack.js';
+import GithubIcon from '../assets/images/github-icon.svg';
+import BlogIcon from '../assets/images/blog-icon.svg';
+import VelogIcon from '../assets/images/velog-icon.svg';
+import ProfileImage from '../assets/images/profile-img.png';
 import Style from '../style/profile.css';
 
 export default class Profile extends Component {
@@ -7,26 +11,24 @@ export default class Profile extends Component {
     const linkList = [
       {
         name: 'github',
-        iconSrc: `${process.env.PUBLIC_URL}/assets/images/github-icon.svg`,
+        iconSrc: GithubIcon,
         href: 'https://github.com/klloo',
       },
       {
         name: 'blog',
-        iconSrc: `${process.env.PUBLIC_URL}/assets/images/blog-icon.svg`,
+        iconSrc: BlogIcon,
         href: 'https://klloo.github.io',
       },
       {
         name: 'velog',
-        iconSrc: `${process.env.PUBLIC_URL}/assets/images/velog-icon.svg`,
+        iconSrc: VelogIcon,
         href: 'https://velog.io/@klloo',
       },
     ];
     return `
         <div class="profile-container">
             <div class="profile-wrapper">
-                <img class="profile-image" src="${
-                  process.env.PUBLIC_URL
-                }/assets/images/profile-img.png" alt="profile-img"/>
+                <img class="profile-image" src="${ProfileImage}" alt="profile-img"/>
                 <div class="profile-name">
                     장희영
                     <div class="profile-position">
