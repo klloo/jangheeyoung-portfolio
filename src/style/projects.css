@@ -12,7 +12,7 @@
 
 .projects-item {
   padding-bottom: 2rem;
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid var(--color-border);
 }
 
 .projects-item-title {
@@ -25,14 +25,14 @@
 .projects-item-term {
   font-size: 0.85rem;
   font-weight: 500;
-  color: #8b8b8b;
+  color: var(--color-textlight);
   padding: 1rem 0;
 }
 
 .projects-item-desc {
   font-weight: 400;
   font-size: 0.95rem;
-  color: #444;
+  color: var(--color-textgrey);
 }
 
 .proejcts-item-label {
@@ -52,7 +52,7 @@
   align-items: center;
   justify-self: center;
   border-radius: 20px;
-  background-color: #eeeef3;
+  background-color: var(--color-tag);
   padding: 0.1rem 0.8rem;
   font-size: 0.85rem;
   font-weight: 500;
@@ -68,7 +68,6 @@
   width: 17px;
   height: 17px;
   cursor: pointer;
-  filter: invert(25%) sepia(1%) saturate(2838%) hue-rotate(76deg)
-    brightness(95%) contrast(87%);
   margin-top: 3px;
+  filter: var(--filter-icon);
 }

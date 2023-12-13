@@ -6,9 +6,11 @@ export default class Component {
     this.$target = $target;
     this.$props = $props;
     this.setup();
+    this.setEvent();
     this.render();
   }
   setup() {}
+  setEvent() {}
   mounted() {}
   template() {
     return '';
@@ -18,7 +20,7 @@ export default class Component {
     this.mounted();
   }
   setState(newState) {
-    this.$state = { ...this.$state, ...newState };
+    this.state = { ...this.state, ...newState };
     this.render();
   }
   addEvent(eventType, selector, callback) {

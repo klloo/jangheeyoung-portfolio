@@ -1,0 +1,15 @@
+.footer-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 0.5rem;
+  font-size: 0.8rem;
+  color: var(--color-font);
+  padding: 3rem 2rem 5rem 2rem;
+  margin-top: 3rem;
+  box-sizing: border-box;
+  font-weight: 300;
+  border-top: 1px solid var(--color-border);
+  width: 100%;
+}
