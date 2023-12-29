@@ -17,14 +17,7 @@ module.exports = {
         exclude: /node_modules/,
       },
       {
-        test: /\.(png|jpg|gif)$/,
-        type: 'asset',
-        generator: {
-          filename: 'assets/[hash][ext][query]',
-        },
-      },
-      {
-        test: /\.(ttf|eot|svg)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
+        test: /\.(png|jpg|gif|svg)$/,
         type: 'asset/resource',
         generator: {
           filename: 'assets/[hash][ext][query]',
