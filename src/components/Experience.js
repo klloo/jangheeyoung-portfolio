@@ -18,7 +18,6 @@ export default class Experience extends Component {
         descriptions: [
           '인프라 관제 솔루션 회사의 클라우드 관리 플랫폼 개발 팀에서 근무',
           '코드 리뷰, 사내 기술 세미나를 통해 개발 역량 강화',
-          '프로젝트 일련의 과정을 경험하며 팀원들과 협업하는 방식 및 개발 일정을 관리하는 방식에 대해 배웠습니다.',
         ],
       },
       {
@@ -26,7 +25,7 @@ export default class Experience extends Component {
         term: '2023.02. ~ 2023.12. (10개월)',
         descriptions: [
           'C 언어를 사용하는 유닉스 개발 환경에서 셸, 터미널, 함수에 대해 <a target="_blank" href="https://github.com/klloo/42seoul">학습</a>',
-          '모든 과제를 동료 학습 기반으로 진행하였고, 이 과정에서 다양한 동료들과 의사소통하며 경험을 공유하는 방식에 대해 배웠습니다.',
+          '동료 학습 기반의 과제 진행',
         ],
       },
     ];

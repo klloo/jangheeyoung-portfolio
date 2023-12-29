@@ -52,14 +52,13 @@ export default class Profile extends Component {
                 )
                 .join('')}
             </div>
-            <div data-component="techstack-appender"></div>
         </div>
     `;
   }
   mounted() {
-    const $techstackAppender = this.$target.querySelector(
-      '[data-component="techstack-appender"]'
-    );
-    new Techstack($techstackAppender);
+    // const $techstackAppender = this.$target.querySelector(
+    //   '[data-component="techstack-appender"]'
+    // );
+    // new Techstack($techstackAppender);
   }
 }
