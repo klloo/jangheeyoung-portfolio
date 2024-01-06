@@ -32,4 +32,12 @@ module.exports = {
     }),
   ],
   target: ['web', 'es5'],
+  devServer: {
+    static: {
+      directory: path.join(__dirname, 'public'),
+    },
+    compress: true,
+    port: 3000,
+    hot: true,
+  },
 };
