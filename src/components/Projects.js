@@ -6,6 +6,8 @@ import RandpsImage1 from '../assets/images/randps.png';
 import UndergroundImage1 from '../assets/images/undergnd.png';
 import RandpsImage2 from '../assets/images/randps2.png';
 import UndergroundImage2 from '../assets/images/undergnd2.png';
+import StudyopsImage1 from '../assets/images/studyops1.png';
+import StudyopsImage2 from '../assets/images/studyops2.png';
 
 export default class Projects extends Component {
   template() {
@@ -88,7 +90,7 @@ export default class Projects extends Component {
           'react-i18next를 활용한 다국어 처리',
         ],
         github: 'https://github.com/klloo/react-ts-underground-client',
-        siteLink: 'https://www.undergnd.com',
+        siteLink: 'https://undergnd.com',
         image1: UndergroundImage1,
         image2: UndergroundImage2,
       },
@@ -104,15 +106,15 @@ export default class Projects extends Component {
           '토큰 방식의 자체 로그인 기능, 소셜 로그인 기능(카카오) 구현',
           '스터디 일정 관리 캘린더 구현',
           '회원간 스터디 초대, 수락 및 거절 기능',
-          '스터디 출석 관리 기능',
-          '출석 데이터를 활용한 벌금 및 정산 기능',
+          '스터디 출석 관리 및 출석 데이터를 활용한 벌금 및 정산 기능',
+          'memoization을 통한 토큰 재발급 api 중복 호출 문제 해결',
           'Skeleton UI 적용으로 데이터 로드 시 사용자 경험 개선',
           '프로필 이미지 업로드 및 스터디 자료실 기능 구현 예정',
         ],
         github: 'https://github.com/StudyOps/react-ts-studyops-client',
-        siteLink: null,
-        image1: null,
-        image2: null,
+        siteLink: 'https://studyops.site',
+        image1: StudyopsImage1,
+        image2: StudyopsImage2,
       },
       {
         name: '개인 포트폴리오 웹페이지',
