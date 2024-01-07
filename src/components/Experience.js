@@ -9,7 +9,7 @@ export default class Experience extends Component {
         term: '2017.03. ~ 2021.08. | 평점평균 : 4.05 / 4.50 | 졸업',
         descriptions: [
           '교내 튜터링 활동 (C프로그래밍, 자료구조, 알고리즘)',
-          '교내 캡스톤 경진대회 최우수상 수상 (<a target="_blank" href="https://cs.smu.ac.kr/cs/community/graduation.do?mode=view&articleNo=712204&article.offset=0&articleLimit=30#/list">악보 생성 애플리케이션</a>)',
+          '교내 캡스톤 경진대회 최우수상 수상 (<a target="_blank" href="https://cs.smu.ac.kr/cs/community/graduation.do?mode=view&articleNo=712204&article.offset=0&articleLimit=30#/list">악보 생성 안드로이드 애플리케이션</a>)',
         ],
       },
       {

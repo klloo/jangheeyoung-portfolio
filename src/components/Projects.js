@@ -2,6 +2,10 @@ import Component from '../core/Component.js';
 import GithubIcon from '../assets/images/github-icon.svg';
 import LinkIcon from '../assets/images/link-icon.svg';
 import Style from '../style/projects.css';
+import RandpsImage1 from '../assets/images/randps.png';
+import UndergroundImage1 from '../assets/images/undergnd.png';
+import RandpsImage2 from '../assets/images/randps2.png';
+import UndergroundImage2 from '../assets/images/undergnd2.png';
 
 export default class Projects extends Component {
   template() {
@@ -31,12 +35,14 @@ export default class Projects extends Component {
         ],
         github: null,
         siteLink: null,
+        image1: null,
+        image2: null,
       },
       {
         name: 'GPGT 알고리즘 스터디 사이트',
         intro:
           '백준 온라인 저지와 solved.ac를 활용한 <b>알고리즘 스터디를 효율적으로 운영</b>할 수 있는 웹서비스 입니다. <br/> 함께 알고리즘 스터디를 진행하던 친구와 스터디를 효율적으로 관리할 수 있는 서비스를 개발하면 좋겠다는 생각에서 시작했습니다.<br/>이에 따라 스터디원을 관리할 수 있는 몇 가지 기능을 개발하여 운영하기 시작하였고, 현재 <b>33명의 스터디원이 함께 사용</b>하고 있습니다. 이후에도 스터디원들의 동기 부여를 위해 서비스를 계속 확장해 나가고 있습니다.',
-        members: '프론트엔드 개발자 1명, 백엔드 개발자 1명',
+        members: '프론트엔드 개발자 2명, 백엔드 개발자 1명',
         role: '프론트엔드 개발, 기획, 디자인, 배포',
         term: '2023.08. ~ 운영 중',
         techStack: [
@@ -58,14 +64,17 @@ export default class Projects extends Component {
           '마크다운 게시판',
           '사용자, 경고, 포인트, 이벤트를 관리하는 관리자 전용 기능',
           '주차별로 문제를 설정할 수 있는 로드맵 기능',
+          '로그 조회 시 무한 스크롤을 적용하여 네트워크 성능과 사용자 경험 동시 개선',
         ],
         github: 'https://github.com/klloo/react-randps-client',
-        siteLink: 'https://randps.kr/login',
+        siteLink: 'https://randps.kr',
+        image1: RandpsImage1,
+        image2: RandpsImage2,
       },
       {
         name: 'Underground 독립영화제 페이지',
         intro:
-          '독립영화 플랫폼 Underground에서 주최하는 <b>온라인 영화제 페이지를 개발</b>하였습니다.<br/> 2023년 11월 16일 부터 3일 간 몬터레이베이 캘리포니아주립대학교 학생들이 제작한 영화로 온라인 영화제를 진행하였으며 <br/> 총 5개의 영화가 출품되었고 한 편당 평균 30회의 조회수를 달성하였습니다.',
+          '독립영화 플랫폼 Underground에서 주최하는 <b>온라인 영화제 페이지를 개발</b>하였습니다.<br/> 2023년 11월 16일 부터 3일 간 몬터레이베이 캘리포니아주립대학교 학생들이 제작한 영화로 온라인 영화제를 진행하였으며 총 5개의 영화가 출품되었고 한 편 당 평균 30회의 조회수를 달성하였습니다.',
         members:
           '프론트엔드 개발자 2명, 백엔드 개발자 1명, 기획자 1명, 디자이너 1명, 인프라 1명',
         role: '사용자 페이지 프론트엔드 개발',
@@ -79,7 +88,9 @@ export default class Projects extends Component {
           'react-i18next를 활용한 다국어 처리',
         ],
         github: 'https://github.com/klloo/react-ts-underground-client',
-        siteLink: 'https://www.undergnd.com/',
+        siteLink: 'https://www.undergnd.com',
+        image1: UndergroundImage1,
+        image2: UndergroundImage2,
       },
       {
         name: '스터디 관리 웹서비스 Study Ops',
@@ -95,13 +106,16 @@ export default class Projects extends Component {
           '회원간 스터디 초대, 수락 및 거절 기능',
           '스터디 출석 관리 기능',
           '출석 데이터를 활용한 벌금 및 정산 기능',
-          '프로필 이미지 업로드 및 게시판 기능 구현 예정',
+          'Skeleton UI 적용으로 데이터 로드 시 사용자 경험 개선',
+          '프로필 이미지 업로드 및 스터디 자료실 기능 구현 예정',
         ],
         github: 'https://github.com/StudyOps/react-ts-studyops-client',
         siteLink: null,
+        image1: null,
+        image2: null,
       },
       {
-        name: '포트폴리오 웹페이지',
+        name: '개인 포트폴리오 웹페이지',
         intro:
           '직접 사용할 <b>포트폴리오 웹페이지를 개발</b>하였습니다. <br/> JavaScript와 Webpack을 사용하여 정적 웹사이트를 구현하고 Vercel을 통해 배포를 하였습니다.',
         members: null,
@@ -109,12 +123,14 @@ export default class Projects extends Component {
         term: '2023.12.',
         techStack: ['JavaScript', 'Webpack', 'Vercel'],
         features: [
-          '클래스형 컴포넌트 기반의 모듈 시스템 구현',
-          'Webpack을 통해 모듈 번들링',
           '다크모드 기능 구현',
+          'Webpack을 사용하여 모듈 번들링',
+          '클래스형 컴포넌트 기반의 모듈 시스템을 구현하여 생산성 향상',
         ],
         github: 'https://github.com/klloo/jangheeyoung-portfolio',
-        siteLink: 'https://jangheeyoung-portfolio.vercel.app/',
+        siteLink: 'https://jangheeyoung-portfolio.vercel.app',
+        image1: null,
+        image2: null,
       },
     ];
     return `
@@ -127,31 +143,57 @@ export default class Projects extends Component {
         .map(
           (project, i) => `
           <div class="${i < projectList.length - 1 ? 'projects-item' : ''}">
-          <div class="projects-item-title">
-            ${project.name}
-            ${
-              project.siteLink !== null
-                ? `
-                  <a target="_blank" href="${project.siteLink}">
-                    <img class="projects-item-icon" src="${LinkIcon}" alt="${project.name}-link">
-                  </a>
-                `
-                : ''
-            }
-            ${
-              project.github !== null
-                ? `
-                  <a target="_blank" href="${project.github}">
-                    <img class="projects-item-icon" src="${GithubIcon}" alt="${project.name}-github">
-                  </a>
-                `
-                : ''
-            }
+          <div class="projects-item-intro-wrapper">
+            <div>
+              <div class="projects-item-title">
+                ${project.name}
+              </div>
+              <div class="projects-item-term">
+                ${project.term} | ${project.role}
+              </div>
+              <div class="projects-item-link-list">
+                ${
+                  project.siteLink !== null
+                    ? `
+                      <div class="projects-item-link-wrapper">
+                        <img class="projects-item-icon" src="${LinkIcon}" alt="${project.name}-link">
+                        <a target="_blank" href="${project.siteLink}">
+                          ${project.siteLink}
+                        </a>
+                      </div>
+                    `
+                    : ''
+                }
+                ${
+                  project.github !== null
+                    ? `
+                      <div class="projects-item-link-wrapper">
+                        <img class="projects-item-icon" src="${GithubIcon}" alt="${project.name}-github">
+                        <a target="_blank" href="${project.github}">
+                          ${project.github}
+                        </a>
+                      </div>
+                    `
+                    : ''
+                }
+              </div>
+              <div class="projects-item-image-wrapper">
+                ${
+                  project.image1 !== null
+                    ? `
+                <img class="projects-item-image" src=${project.image1}/>`
+                    : ''
+                }
+                ${
+                  project.image2 !== null
+                    ? `
+                <img class="projects-item-image" src=${project.image2}/>`
+                    : ''
+                }
+              </div>
+              <div class="projects-item-desc">${project.intro}</div>
+            </div>
           </div>
-          <div class="projects-item-term">
-            ${project.term} | ${project.role}
-          </div>
-          <div class="projects-item-desc">${project.intro}</div>
           ${
             project.members !== null
               ? `
