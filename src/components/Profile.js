@@ -3,7 +3,7 @@ import Techstack from './TechStack.js';
 import GithubIcon from '../assets/images/github-icon.svg';
 import BlogIcon from '../assets/images/blog-icon.svg';
 import VelogIcon from '../assets/images/velog-icon.svg';
-import ProfileImage from '../assets/images/profile-img.jpeg';
+import ProfileImage from '../assets/images/profile-img.png';
 import Style from '../style/profile.css';
 
 export default class Profile extends Component {
@@ -45,9 +45,15 @@ export default class Profile extends Component {
               ${linkList
                 .map(
                   (link) => `
-                  <a target="_blank" href="${link.href}">
-                    <img class="profile-icon" src="${link.iconSrc}" alt="${link.name}">
-                  </a>
+                  <div>
+                    <div>
+                      <img class="profile-icon" src="${link.iconSrc}" alt="${link.name}"/>
+                      ${link.name}
+                    </div>
+                    <a target="_blank" href="${link.href}">
+                      ${link.href}
+                    </a>
+                  </div>
               `
                 )
                 .join('')}
