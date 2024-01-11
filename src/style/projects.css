@@ -31,15 +31,16 @@
   font-weight: 400;
   font-size: 0.95rem;
   color: var(--color-textgrey);
+  line-height: 1.6;
 }
 
-.proejcts-item-label {
+.projects-item-label {
   font-size: 0.9rem;
   font-weight: 700;
   padding: 1rem 0;
 }
 
-.proejcts-item-techstack-wrapper {
+.projects-item-techstack-wrapper {
   display: flex;
   flex-wrap: wrap;
   gap: 0.5rem;
@@ -57,10 +58,10 @@
 }
 
 .projects-item-image {
-  width: 27rem;
+  width: 26rem;
   max-width: 100%;
   object-fit: fill;
-  border-radius: 10px;
+  border-radius: 5px;
   margin: 1rem 0 2rem 0;
 }
 
@@ -90,4 +91,30 @@
   gap: 1rem;
   flex-wrap: wrap;
   row-gap: 0;
+}
+
+.projects-item-sub-label {
+  font-size: 0.9rem;
+  font-weight: 700;
+  padding-bottom: 0.5rem;
+}
+
+.projects-item-sub-desc {
+  font-weight: 400;
+  font-size: 0.95rem;
+  color: var(--color-textgrey);
+  padding-left: 0.6rem;
+  padding-bottom: 1rem;
+  line-height: 1.6;
+}
+
+.troubleshooting {
+  font-size: 1.1rem;
+  margin-top: 1rem;
+}
+
+.projects-item-result-image {
+  width: 25rem;
+  margin-top: 0.5rem;
+  border-radius: 5px;
 }

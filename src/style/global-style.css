@@ -179,9 +179,14 @@ b {
 
 .global-container {
   margin: 0 auto;
-  padding: 5rem 0.5rem;
-  width: 100%;
-  max-width: 70%;
+  padding: 5rem 0rem;
+  width: 60%;
+}
+
+@media (max-width: 800px) {
+  .global-container {
+    width: 90%;
+  }
 }
 
 .global-list {
