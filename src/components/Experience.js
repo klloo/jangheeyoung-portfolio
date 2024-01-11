@@ -6,15 +6,15 @@ export default class Experience extends Component {
     const experienceList = [
       {
         name: '상명대학교 컴퓨터과학과',
-        term: '2017.03. ~ 2021.08. | 평점평균 : 4.05 / 4.50 | 졸업',
+        term: '2017.03. ~ 2021.08. | 평점 평균 : 4.05 / 4.50 | 졸업',
         descriptions: [
-          '교내 튜터링 활동 (C프로그래밍, 자료구조, 알고리즘)',
+          '교내 튜터링 활동 (C 프로그래밍, 자료구조, 알고리즘)',
           '교내 캡스톤 경진대회 최우수상 수상 (<a target="_blank" href="https://cs.smu.ac.kr/cs/community/graduation.do?mode=view&articleNo=712204&article.offset=0&articleLimit=30#/list">악보 생성 안드로이드 애플리케이션</a>)',
         ],
       },
       {
         name: '(주)와치텍 프론트엔드 개발/기획 업무 담당',
-        term: '2021.08. ~ 2023.01. (1년 6개월) | 클라우드팀 사원 | 퇴사',
+        term: '2021.08. ~ 2023.01. (1년 6개월) | 클라우드 팀 사원 | 퇴사',
         descriptions: [
           '인프라 관제 솔루션 회사의 클라우드 관리 플랫폼 개발 팀에서 근무',
           '코드 리뷰, 사내 기술 세미나를 통해 개발 역량 강화',
