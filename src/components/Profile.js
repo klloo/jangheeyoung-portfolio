@@ -3,7 +3,7 @@ import Techstack from './TechStack.js';
 import GithubIcon from '../assets/images/github-icon.svg';
 import BlogIcon from '../assets/images/blog-icon.svg';
 import VelogIcon from '../assets/images/velog-icon.svg';
-import ProfileImage from '../assets/images/profile-img.jpeg';
+import ProfileImage from '../assets/images/profile-img.png';
 import Style from '../style/profile.css';
 
 export default class Profile extends Component {
