@@ -67,7 +67,7 @@ export default class Projects extends Component {
           '정기적으로 진행되는 <b>스터디 일정과 출결 관리</b>에 집중한 스터디 관리 웹 서비스입니다. <br/>해당 서비스에 등록된 스터디의 일정을 관리하고 출석 기능을 통해 출결 및 벌금 현황을 조회할 수 있습니다.',
         members: '프론트엔드 개발자 1명, 백엔드 개발자 1명, 디자이너 1명',
         role: '프론트엔드 개발, 기획',
-        term: '2023.10. ~ 개발 진행 중',
+        term: '2023.10. ~ 2024.01',
         techStack: ['TypeScript', 'React', 'SWR', 'Emotion'],
         features: [
           '토큰 방식의 자체 로그인 기능, 소셜 로그인 기능(카카오) 구현',
@@ -76,7 +76,7 @@ export default class Projects extends Component {
           '스터디 출석 관리 및 출석 데이터를 활용한 벌금 및 정산 기능',
           'memoization을 통한 토큰 재발급 api 중복 호출 문제 해결',
           'Skeleton UI 적용으로 데이터 로드 시 사용자 경험 개선',
-          '프로필 이미지 업로드 및 스터디 자료실 기능 구현 예정',
+          '스터디 별 자료실 기능',
         ],
         github: 'https://github.com/StudyOps/react-ts-studyops-client',
         siteLink: 'https://studyops.site',
