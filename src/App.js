@@ -11,11 +11,11 @@ export default class App extends Component {
     <div data-component="header-appender"></div>
       <div class="global-container">
         <div class="global-list">
-          <div data-component="profile-appender"></div>
+          <div data-component="profile-appender" id="about"></div>
           <div class="global-line"></div>
-          <div data-component="techstack-appender"></div>
+          <div data-component="techstack-appender" id="skills"></div>
           <div class="global-line"></div>
-          <div data-component="projects-appender"></div>
+          <div data-component="projects-appender" id="projects"></div>
         </div>
       </div>
       <div data-component="footer-appender"></div>

@@ -12,9 +12,9 @@ export default class Header extends Component {
                 ? `<img src=${SunIcon} alt='sun-icon'/>`
                 : `<img src=${MoonIcon} alt='moon-icon'/>`
             }</div>
-            <div>Projects</div>
-            <div>Skills</div>
-            <div>About</div>
+            <div class="header-menu">Projects</div>
+            <div class="header-menu">Skills</div>
+            <div class="header-menu">About</div>
         </div>
     `;
   }
@@ -26,6 +26,20 @@ export default class Header extends Component {
       const newTheme = this.state.isDarkMode ? window.__LIGHT : window.__DARK;
       window.__setTheme(newTheme);
       this.setState({ isDarkMode: newTheme === window.__DARK });
+    });
+
+    this.addEvent('click', '.header-menu', (event) => {
+      const idx = Array.from(event.target.parentElement.children).indexOf(
+        event.target
+      );
+      const menus = ['about', 'projects', 'skills'];
+      const sectionElement = document.getElementById(menus[idx]);
+      const sectionTop = sectionElement?.getBoundingClientRect().top;
+
+      window.scrollTo({
+        top: window.scrollY + sectionTop - 80,
+        behavior: 'smooth',
+      });
     });
   }
 }
