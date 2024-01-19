@@ -28,11 +28,12 @@ export default class Header extends Component {
       this.setState({ isDarkMode: newTheme === window.__DARK });
     });
 
-    this.addEvent('click', '.header-menu', (event) => {
+    this.addEvent('click', '.header-wrapper', (event) => {
       const idx = Array.from(event.target.parentElement.children).indexOf(
         event.target
       );
-      const menus = ['about', 'projects', 'skills'];
+      console.log(idx);
+      const menus = ['', 'projects', 'skills', 'about'];
       const sectionElement = document.getElementById(menus[idx]);
       const sectionTop = sectionElement?.getBoundingClientRect().top;
 
