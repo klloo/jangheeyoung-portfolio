@@ -1,0 +1,27 @@
+.header-theme-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  width: 40px;
+  cursor: pointer;
+  border: none;
+}
+
+.header-wrapper {
+  z-index: 999;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+  gap: 2rem;
+  padding: 1rem;
+  align-items: center;
+  box-sizing: border-box;
+  background-color: var(--color-background);
+  > div {
+    cursor: pointer;
+  }
+}

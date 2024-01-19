@@ -19,7 +19,7 @@ export default class Projects extends Component {
           '백준 온라인 저지와 solved.ac를 활용한 <b>알고리즘 스터디를 효율적으로 운영</b>할 수 있는 웹서비스입니다. <br/> 함께 알고리즘 스터디를 진행하던 친구와 스터디를 효율적으로 관리할 수 있는 서비스를 개발하면 좋겠다는 생각에서 시작했습니다.<br/>이에 따라 스터디원을 관리할 수 있는 몇 가지 기능을 개발하여 운영하기 시작하였고, 현재 <b>33명의 스터디원이 함께 사용</b>하고 있습니다. 이후에도 스터디원들의 동기 부여를 위해 서비스를 계속 확장해 나가고 있습니다.',
         members: '프론트엔드 개발자 2명, 백엔드 개발자 1명',
         role: '프론트엔드 개발, 기획, 디자인, 배포',
-        term: '2023.08. ~ 운영 중',
+        term: '2023.08 ~ 2023.09',
         techStack: [
           'JavaScript',
           'React',
@@ -67,7 +67,7 @@ export default class Projects extends Component {
           '정기적으로 진행되는 <b>스터디 일정과 출결 관리</b>에 집중한 스터디 관리 웹 서비스입니다. <br/>해당 서비스에 등록된 스터디의 일정을 관리하고 출석 기능을 통해 출결 및 벌금 현황을 조회할 수 있습니다.',
         members: '프론트엔드 개발자 1명, 백엔드 개발자 1명, 디자이너 1명',
         role: '프론트엔드 개발, 기획',
-        term: '2023.10. ~ 2024.01',
+        term: '2023.10 ~ 2024.01',
         techStack: ['TypeScript', 'React', 'SWR', 'Emotion'],
         features: [
           '토큰 방식의 자체 로그인 기능, 소셜 로그인 기능(카카오) 구현',
@@ -92,7 +92,8 @@ export default class Projects extends Component {
           result:
             '<b>Access 토큰은 localStorage에 저장</b>하는 방식을 선택했습니다.<br/>' +
             '로컬 변수에 저장할 경우 새로고침을 할 때마다 재발급 요청을 보내는 것이 비효율적이라고 생각했고 XSS 취약점은 어느 저장 방식을 선택하든 고려해야 할 문제이기 때문에 조금 더 효율적이고 간단하게 구현할 수 있는 방식을 선택하게 되었습니다.<br/>' +
-            '<b>Refresh 토큰</b>은 Access 토큰의 재발급을 위한 것으로 용도가 한정되어 있으며, CSRF 공격으로는 새로 발급받은 Access 토큰을 수령할 방법이 없기 때문에 쿠키에 저장해도 CSRF 공격으로부터 안전합니다.<br/>따라서 자바스크립트 코드로 접근이 불가능한 <b>httpOnly 쿠키</b>로 저장하여 XSS 공격도 방지하는 것이 최선이라고 판단하였습니다. <br/>',
+            '<b>Refresh 토큰</b>은 Access 토큰의 재발급을 위한 것으로 용도가 한정되어 있으며, CSRF 공격으로는 새로 발급받은 Access 토큰을 수령할 방법이 없기 때문에 쿠키에 저장해도 CSRF 공격으로부터 안전합니다.<br/>따라서 자바스크립트 코드로 접근이 불가능한 <b>httpOnly 쿠키</b>로 저장하여 XSS 공격도 방지하는 것이 최선이라고 판단하였습니다. <br/>' +
+            '토큰의 저장 위치를 결정하는 과정에서 브라우저 저장소와 쿠키의 특징과, 프론트엔드 개발 시에 주의해야 할 보안 취약점에 대해 이해할 수 있었습니다.',
           resultImage: null,
         },
       },
@@ -103,7 +104,7 @@ export default class Projects extends Component {
         members:
           '프론트엔드 개발자 1명, 백엔드 개발자 1명, 기획자 1명, 디자이너 1명, 인프라 1명',
         role: '사용자 페이지 프론트엔드 개발',
-        term: '2023.09. ~ 2023.11.',
+        term: '2023.09 ~ 2023.11',
         techStack: ['TypeScript', 'React', 'ReactQuery', 'Emotion'],
         features: [
           '토큰 방식의 자체 로그인 기능',
@@ -133,9 +134,9 @@ export default class Projects extends Component {
         name: '개인 포트폴리오 웹페이지',
         intro:
           '직접 사용할 <b>포트폴리오 웹페이지를 개발</b>하였습니다. <br/> JavaScript와 Webpack을 사용하여 정적 웹사이트를 구현하고 Vercel을 통해 배포를 하였습니다.',
-        members: null,
+        members: '프론트엔드 개발자 1명',
         role: '프론트엔드 개발',
-        term: '2023.12.',
+        term: '2023.12',
         techStack: ['JavaScript', 'Webpack', 'Vercel'],
         features: [
           '다크 모드 기능 구현',
@@ -159,151 +160,140 @@ export default class Projects extends Component {
           resultImage: null,
         },
       },
-      {
-        name: 'CMP (Cloud Management Platform)',
-        intro:
-          '(주)와치텍에서 오픈스택으로 <b>클라우드 환경을 구축하고 관리할 수 있는 플랫폼</b>을 개발하였습니다. <br/> 클라우드 환경을 구축하는 워크플로의 통합 관리 기능과 구축된 클라우드 자원들을 모니터링하고 효율적으로 관리할 수 있는 기능을 사용자 및 관리자의 관점에서 기획하고 개발하는 업무를 담당하였습니다.',
-        members: null,
-        role: '프론트엔드 개발, REST API 개발, 기획',
-        term: '2022.02. ~ 2022.12.',
-        techStack: [
-          'JavaScript',
-          'Vue2',
-          'Element UI',
-          'Highcharts',
-          'Java',
-          'Spring',
-          'MyBatis',
-          'MySQL',
-          'SVN',
-        ],
-        features: [
-          '클라우드 자원의 구성 및 성능 정보 모니터링 화면 개발',
-          '클라우드 서비스 요청 관련 워크플로 정보 조회, 푸시 알림 기능 개발',
-        ],
-        github: null,
-        siteLink: null,
-        image1: null,
-        image2: null,
-        troubleShooting: null,
-      },
     ];
     return `
     <div>
       <div class="projects-title">
-        <div>진행 프로젝트</div>
+        <div>📑 Projects</div>
+      </div>
+      <div class="global-menu-list">
+        ${projectList
+          .map(
+            (_, idx) => `
+              <div class="global-menu projects-menu ${
+                idx === this.state.curTab ? 'global-menu-selected ' : ''
+              }">${idx + 1}</div>
+          `
+          )
+          .join('')}
       </div>
       <div class="projects-content">
       ${projectList
         .map(
-          (project, i) => `
-          <div class="${i < projectList.length - 1 ? 'projects-item' : ''}">
-          <div class="projects-item-intro-wrapper">
+          (project, idx) => `
+          <div class="${idx !== this.state.curTab ? 'hidden ' : ''}">
             <div>
-              <div class="projects-item-title">
-                ${project.name}
+              <div class="projects-item-intro">
+                <div class="projects-item-title">
+                  ${project.name}
+                  <div class="projects-item-link-wrapper">
+                    <a target="_blank" href="${project.siteLink}">
+                      Link
+                    </a>
+                    <a target="_blank" href="${project.github}">
+                      Code
+                    </a>
+                  </div>
+                </div>
+                <div class="projects-item-intro-item">
+                  <div class="projects-item-intro-label">
+                    기간
+                  </div>
+                  ${project.term} 
+                </div>
+                <div class="projects-item-intro-item">
+                  <div class="projects-item-intro-label">
+                    인원
+                  </div>
+                  ${project.members} 
+                </div>
+                <div class="projects-item-intro-item">
+                  <div class="projects-item-intro-label">
+                    역할
+                  </div>
+                  ${project.role} 
+                </div>
+                <div class="projects-item-techstack-wrapper">
+                  ${project.techStack
+                    .map(
+                      (tech) =>
+                        `<div class="projects-item-tech-tag">${tech}</div>`
+                    )
+                    .join('')}
+                </div>
               </div>
-              <div class="projects-item-term">
-                ${project.term} | ${project.role}
-              </div>
-              <div class="projects-item-link-list">
-                ${
-                  project.siteLink !== null
-                    ? `
-                      <div class="projects-item-link-wrapper">
-                        <img class="projects-item-icon" src="${LinkIcon}" alt="${project.name}-link">
-                        <a target="_blank" href="${project.siteLink}">
-                          ${project.siteLink}
-                        </a>
-                      </div>
-                    `
-                    : ''
-                }
-                ${
-                  project.github !== null
-                    ? `
-                      <div class="projects-item-link-wrapper">
-                        <img class="projects-item-icon" src="${GithubIcon}" alt="${project.name}-github">
-                        <a target="_blank" href="${project.github}">
-                          ${project.github}
-                        </a>
-                      </div>
-                    `
-                    : ''
-                }
-              </div>
+            </div>
+            
+            <div class="projects-item-content">
+              <div class="projects-item-content-title">Overview</div>
               <div class="projects-item-image-wrapper">
-                ${
-                  project.image1 !== null
-                    ? `
-                <img class="projects-item-image" src=${project.image1}/>`
-                    : ''
-                }
-                ${
-                  project.image2 !== null
-                    ? `
-                <img class="projects-item-image" src=${project.image2}/>`
-                    : ''
-                }
+                  ${
+                    project.image1 !== null
+                      ? `
+                  <img class="projects-item-image" src=${project.image1}/>`
+                      : ''
+                  }
+                  ${
+                    project.image2 !== null
+                      ? `
+                  <img class="projects-item-image" src=${project.image2}/>`
+                      : ''
+                  }
               </div>
               <div class="projects-item-desc">${project.intro}</div>
             </div>
+
+            <div class="projects-item-content">
+              <div class="projects-item-content-title">구현 기능</div>
+              <div class="projects-item-desc projects-item-desc-list">
+                ${project.features
+                  .map((desc) => `•&nbsp;&nbsp;${desc}<br/>`)
+                  .join('')}
+              </div> 
+            </div>
+            
+            <div class="projects-item-content">
+              <div class="projects-item-content-title">Troubleshooting</div>
+                <div class="projects-item-desc">
+                  <div class="projects-item-sub-label">•&nbsp;&nbsp;문제 상황</div>
+                  <div class="projects-item-sub-desc">${
+                    project.troubleShooting.trouble
+                  }</div>
+                  <div class="projects-item-sub-label">•&nbsp;&nbsp;해결 과정</div>
+                  <div class="projects-item-sub-desc">${
+                    project.troubleShooting.process
+                  }</div>
+                  <div class="projects-item-sub-label">•&nbsp;&nbsp;결과</div>
+                  ${
+                    project.troubleShooting.resultImage
+                      ? `
+                      <div class="projects-item-sub-desc">
+                        <img class="projects-item-result-image" src=${project.troubleShooting.resultImage}/>
+                      </div>`
+                      : ''
+                  }
+                  <div class="projects-item-sub-desc">${
+                    project.troubleShooting.result
+                  }</div>
+                </div>
+            </div>
           </div>
-          ${
-            project.members !== null
-              ? `
-                <div class="projects-item-label">프로젝트 인원</div>
-                <div class="projects-item-desc">${project.members}</div>
-              `
-              : ''
-          }
-          <div class="projects-item-label">구현 기능</div>
-          <div class="projects-item-desc">
-            ${project.features.map((desc) => `• ${desc}<br/>`).join('')}
-          </div> 
-          <div class="projects-item-label">사용 기술</div>
-          <div class="projects-item-techstack-wrapper">
-            ${project.techStack
-              .map(
-                (tech) => `<div class="projects-item-tech-tag">${tech}</div>`
-              )
-              .join('')}
-          </div>
-          ${
-            project.troubleShooting
-              ? `
-            <div class="projects-item-label troubleshooting">Troubleshooting</div>
-            <div class="projects-item-desc">
-              <div class="projects-item-sub-label">• 문제 상황</div>
-              <div class="projects-item-sub-desc">${
-                project.troubleShooting.trouble
-              }</div>
-              <div class="projects-item-sub-label">• 해결 과정</div>
-              <div class="projects-item-sub-desc">${
-                project.troubleShooting.process
-              }</div>
-              <div class="projects-item-sub-label">• 결과</div>
-              ${
-                project.troubleShooting.resultImage
-                  ? `
-                  <div class="projects-item-sub-desc">
-                    <img class="projects-item-result-image" src=${project.troubleShooting.resultImage}/>
-                  </div>`
-                  : ''
-              }
-              <div class="projects-item-sub-desc">${
-                project.troubleShooting.result
-              }</div>
-            </div> 
-          `
-              : ''
-          }
-        </div>
-      `
+        `
         )
         .join('')}
-    </div>
+      </div>
     </div>
     `;
+  }
+  setup() {
+    this.state = { curTab: 0 };
+  }
+  setEvent() {
+    this.addEvent('click', '.global-menu', (event) => {
+      const idx = Array.from(event.target.parentElement.children).indexOf(
+        event.target
+      );
+      this.setState({ ...this.state, curTab: idx });
+    });
   }
 }

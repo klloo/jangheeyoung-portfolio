@@ -2,6 +2,8 @@
   display: flex;
   flex-direction: column;
   gap: 2rem;
+  width: 100%;
+  aspect-ratio: 6 / 7;
 }
 
 .profile-name {
@@ -15,8 +17,8 @@
 }
 
 .profile-image {
-  width: 11rem;
-  height: 11rem;
+  width: 13rem;
+  height: 13rem;
   border-radius: 50%;
   border-top-left-radius: 10px;
 }
@@ -26,30 +28,50 @@
   gap: 3rem;
   align-items: center;
   flex-wrap: wrap;
+  margin-bottom: 2rem;
 }
 
 .profile-icon {
-  width: 18px;
-  height: 18px;
+  width: 21px;
+  height: 21px;
   cursor: pointer;
   filter: var(--filter-icon);
 }
 
 .profile-icon-wrapper {
+  margin-top: 1rem;
   display: flex;
-  gap: 0.6rem;
+  gap: 0.8rem;
   font-size: 0.85rem;
-  flex-direction: column;
   > div {
     display: flex;
     align-items: center;
     gap: 0.5rem;
-    > div {
-      font-weight: 600;
-      display: flex;
-      gap: 0.3rem;
-      width: 5rem;
-      align-items: center;
-    }
   }
+}
+
+.profile-description {
+  font-size: 1.2rem;
+  line-height: 1.8;
+}
+
+.profile-title {
+  font-weight: 600;
+  font-size: 1.8rem;
+}
+
+.profile-iam-title {
+  display: flex;
+  margin-top: 1rem;
+  gap: 1rem;
+  font-size: 1.3rem;
+  > div {
+    border-bottom: 2px solid var(--color-font);
+    width: 50%;
+  }
+}
+
+.profile-iam-content {
+  font-size: 1.1rem;
+  line-height: 2;
 }
