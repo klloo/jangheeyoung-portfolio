@@ -32,7 +32,7 @@ export default class Header extends Component {
       const idx = Array.from(event.target.parentElement.children).indexOf(
         event.target
       );
-      console.log(idx);
+      if (idx === 0) return;
       const menus = ['', 'projects', 'skills', 'about'];
       const sectionElement = document.getElementById(menus[idx]);
       const sectionTop = sectionElement?.getBoundingClientRect().top;
